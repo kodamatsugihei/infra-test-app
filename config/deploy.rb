@@ -26,7 +26,7 @@ set :linked_dirs, %w(log tmp/pids tmp/cache tmp/sockets)
 set :keep_releases, 5
 
 # rubyのバージョン
-set :rbenv_ruby, '2.4.1'
+set :rbenv_ruby, '2.4.0'
 
 # システムワイドにインストールされているRubyを使用する
 set :rbenv_type, :system
