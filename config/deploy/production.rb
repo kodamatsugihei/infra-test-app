@@ -1,2 +1,9 @@
-server '13.113.227.227', user: 'app', roles: %w{app db web}
-set :ssh_options, keys: '/Users/kodamatsugihei/.ssh/id_rsa'
+# 環境名
+set :stage, :production
+
+# RAILS_ENVに設定する値
+set :rails_env, :production
+
+role :app, %w{ app@app1.koheiji.work }
+role :web, %w{ app@app1.koheiji.work }
+role :db,  %w{ app@app1.koheiji.work }
